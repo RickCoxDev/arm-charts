@@ -1,0 +1,53 @@
+apiVersion: v1
+entries:
+  nfs-client-provisioner:
+  - apiVersion: v1
+    appVersion: 3.1.0
+    created: "2020-01-12T17:03:48.818677-06:00"
+    description: nfs-client is an automatic provisioner that used your *already configured*
+      NFS server, automatically creating Persistent Volumes.
+    digest: 328ccecdead980789efc97ebc22d3d6b7e38fa5f92b9e229ad173db3fbd91732
+    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: bart@verwilst.be
+      name: verwilst
+    name: nfs-client-provisioner
+    sources:
+    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
+    urls:
+    - https://github.com/RickCoxDev/raspi-helm/releases/download/nfs-client-provisioner-1.2.8/nfs-client-provisioner-1.2.8.tgz
+    version: 1.2.8
+  traefik:
+  - apiVersion: v1
+    appVersion: 1.7.20
+    created: "2020-01-12T17:03:48.922778-06:00"
+    description: A Traefik based Kubernetes ingress controller with Let's Encrypt
+      support
+    digest: b4c767e41ff9f20a6be3524030a09e8318d291154df26a6a917b9b5c809ff210
+    home: https://traefik.io/
+    icon: https://docs.traefik.io/img/traefik.logo.png
+    keywords:
+    - traefik
+    - ingress
+    - acme
+    - letsencrypt
+    maintainers:
+    - email: kent.rancourt@microsoft.com
+      name: krancour
+    - email: emile@vauge.com
+      name: emilevauge
+    - email: daniel.tomcej@gmail.com
+      name: dtomcej
+    - email: ludovic@containo.us
+      name: ldez
+    name: traefik
+    sources:
+    - https://github.com/containous/traefik
+    - https://github.com/helm/charts/tree/master/stable/traefik
+    urls:
+    - https://github.com/RickCoxDev/raspi-helm/releases/download/traefik-1.85.0/traefik-1.85.0.tgz
+    version: 1.85.0
+generated: "2020-01-12T17:03:48.526732-06:00"
