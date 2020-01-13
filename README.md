@@ -4,6 +4,7 @@ This repository contains [Helm](https://helm.sh) charts for various projects
 
 * [Traefik](charts/traefik/)
 * [NFS-Client-Provisioner](charts/nfs-client-provisioner)
+* [MetalLB](charts/metallb)
 
 ## Installing Charts from this Repository
 
