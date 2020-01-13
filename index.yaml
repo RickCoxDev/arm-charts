@@ -44,6 +44,31 @@ entries:
     urls:
     - https://github.com/RickCoxDev/raspi-helm/releases/download/nfs-client-provisioner-1.2.8/nfs-client-provisioner-1.2.8.tgz
     version: 1.2.8
+  prometheus:
+  - apiVersion: v1
+    appVersion: 2.15.2
+    created: "2020-01-13T21:18:24.595213997Z"
+    description: Prometheus is a monitoring system and time series database.
+    digest: e8708cfe0d2e575a8224339e643d737240bd19d2e204677681186ed53f88b454
+    engine: gotpl
+    home: https://prometheus.io/
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    maintainers:
+    - email: gianrubio@gmail.com
+      name: gianrubio
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    name: prometheus
+    sources:
+    - https://github.com/prometheus/alertmanager
+    - https://github.com/prometheus/prometheus
+    - https://github.com/prometheus/pushgateway
+    - https://github.com/prometheus/node_exporter
+    - https://github.com/kubernetes/kube-state-metrics
+    tillerVersion: '>=2.8.0'
+    urls:
+    - https://github.com/RickCoxDev/raspi-helm/releases/download/prometheus-10.2.0/prometheus-10.2.0.tgz
+    version: 10.2.0
   traefik:
   - apiVersion: v1
     appVersion: 1.7.20
