@@ -1,12 +1,34 @@
 apiVersion: v1
 entries:
+  grafana:
+  - apiVersion: v1
+    appVersion: 6.5.2
+    created: "2020-01-13T16:24:25.452978-06:00"
+    description: The leading tool for querying and visualizing time series and metrics.
+    digest: eb2f4fd8c6f4fc8598ab3d15d7b6ade6617d9882148a504b2813bc89db36df4f
+    home: https://grafana.net
+    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
+    kubeVersion: ^1.8.0-0
+    maintainers:
+    - email: zanhsieh@gmail.com
+      name: zanhsieh
+    - email: rluckie@cisco.com
+      name: rtluckie
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    name: grafana
+    sources:
+    - https://github.com/grafana/grafana
+    urls:
+    - https://github.com/RickCoxDev/raspi-helm/releases/download/grafana-4.3.0/grafana-4.3.0.tgz
+    version: 4.3.0
   metallb:
   - apiVersion: v1
     appVersion: 0.8.1
-    created: "2020-01-13T03:15:47.225023138Z"
+    created: "2020-01-13T16:24:25.559403-06:00"
     description: MetalLB is a load-balancer implementation for bare metal Kubernetes
       clusters
-    digest: 0619cf5dae7003c4f9eda66735308546dde3b02106a44e4fca50a0f15d083e13
+    digest: 8a061e9f9a4ffd25429f4b1bfdf6e61cf8627f900d41bbd606a07539ec926bb5
     home: https://metallb.universe.tf
     icon: https://metallb.universe.tf/images/logo.png
     keywords:
@@ -27,10 +49,10 @@ entries:
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
-    created: "2020-01-12T17:03:48.818677-06:00"
+    created: "2020-01-13T16:24:25.676976-06:00"
     description: nfs-client is an automatic provisioner that used your *already configured*
       NFS server, automatically creating Persistent Volumes.
-    digest: 328ccecdead980789efc97ebc22d3d6b7e38fa5f92b9e229ad173db3fbd91732
+    digest: 9e227875622891a390e4d4da95ac1d341379fc47016d37fa2e1babc2b0fd1f92
     home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
     keywords:
     - nfs
@@ -47,10 +69,9 @@ entries:
   prometheus:
   - apiVersion: v1
     appVersion: 2.15.2
-    created: "2020-01-13T21:18:24.595213997Z"
+    created: "2020-01-13T16:24:25.848423-06:00"
     description: Prometheus is a monitoring system and time series database.
-    digest: e8708cfe0d2e575a8224339e643d737240bd19d2e204677681186ed53f88b454
-    engine: gotpl
+    digest: 537527ae761222d04c8a8316bf43a4b57d2ec60cf3f5c29b7483d181135ffb7c
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     maintainers:
@@ -65,14 +86,13 @@ entries:
     - https://github.com/prometheus/pushgateway
     - https://github.com/prometheus/node_exporter
     - https://github.com/kubernetes/kube-state-metrics
-    tillerVersion: '>=2.8.0'
     urls:
     - https://github.com/RickCoxDev/raspi-helm/releases/download/prometheus-10.2.0/prometheus-10.2.0.tgz
     version: 10.2.0
   traefik:
   - apiVersion: v1
     appVersion: 1.7.20
-    created: "2020-01-12T17:03:48.922778-06:00"
+    created: "2020-01-13T16:24:25.976755-06:00"
     description: A Traefik based Kubernetes ingress controller with Let's Encrypt
       support
     digest: b4c767e41ff9f20a6be3524030a09e8318d291154df26a6a917b9b5c809ff210
@@ -99,4 +119,4 @@ entries:
     urls:
     - https://github.com/RickCoxDev/raspi-helm/releases/download/traefik-1.85.0/traefik-1.85.0.tgz
     version: 1.85.0
-generated: "2020-01-12T17:03:48.526732-06:00"
+generated: "2020-01-13T16:24:25.163703-06:00"
