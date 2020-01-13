@@ -6,6 +6,7 @@ This repository contains [Helm](https://helm.sh) charts for various projects
 * [NFS-Client-Provisioner](charts/nfs-client-provisioner)
 * [MetalLB](charts/metallb)
 * [Prometheus](charts/prometheus)
+* [Grafana](charts/grafana)
 
 ## Installing Charts from this Repository
 
