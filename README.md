@@ -7,6 +7,7 @@ This repository contains [Helm](https://helm.sh) charts for various projects
 * [MetalLB](charts/metallb)
 * [Prometheus](charts/prometheus)
 * [Grafana](charts/grafana)
+* [Metrics-Server](charts/metrics-server)
 
 ## Installing Charts from this Repository
 
