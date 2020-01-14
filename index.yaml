@@ -46,6 +46,26 @@ entries:
     urls:
     - https://github.com/RickCoxDev/raspi-helm/releases/download/metallb-0.12.0/metallb-0.12.0.tgz
     version: 0.12.0
+  metrics-server:
+  - apiVersion: v1
+    appVersion: 0.3.6
+    created: "2020-01-14T12:36:16.881924404Z"
+    description: Metrics Server is a cluster-wide aggregator of resource usage data.
+    digest: 619cc2132b075836b2bb01b78e3627bb09f553480885f717c06122b05951e6db
+    home: https://github.com/kubernetes-incubator/metrics-server
+    keywords:
+    - metrics-server
+    maintainers:
+    - email: o.with@sportradar.com
+      name: olemarkus
+    - email: k.aasan@sportradar.com
+      name: kennethaasan
+    name: metrics-server
+    sources:
+    - https://github.com/kubernetes-incubator/metrics-server
+    urls:
+    - https://github.com/RickCoxDev/raspi-helm/releases/download/metrics-server-2.9.0/metrics-server-2.9.0.tgz
+    version: 2.9.0
   nfs-client-provisioner:
   - apiVersion: v1
     appVersion: 3.1.0
