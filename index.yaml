@@ -22,6 +22,25 @@ entries:
     urls:
     - https://github.com/RickCoxDev/raspi-helm/releases/download/grafana-4.3.0/grafana-4.3.0.tgz
     version: 4.3.0
+  loki:
+  - apiVersion: v1
+    appVersion: v1.3.0
+    created: "2020-02-07T01:55:23.591884951Z"
+    description: 'Loki: like Prometheus, but for logs.'
+    digest: 1e1eab68480c746d8d7991893dd465ae2de6441d4ee1821b714f29a17133dd50
+    engine: gotpl
+    home: https://grafana.com/loki
+    icon: https://github.com/grafana/loki/raw/master/docs/logo.png
+    kubeVersion: ^1.10.0-0
+    maintainers:
+    - email: lokiproject@googlegroups.com
+      name: Loki Maintainers
+    name: loki
+    sources:
+    - https://github.com/grafana/loki
+    urls:
+    - https://github.com/RickCoxDev/raspi-helm/releases/download/loki-0.25.0/loki-0.25.0.tgz
+    version: 0.25.0
   metallb:
   - apiVersion: v1
     appVersion: 0.8.1
