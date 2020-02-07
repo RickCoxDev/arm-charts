@@ -1,161 +1,21 @@
 apiVersion: v1
 entries:
-  grafana:
-  - apiVersion: v1
-    appVersion: 6.5.2
-    created: "2020-01-13T16:24:25.452978-06:00"
-    description: The leading tool for querying and visualizing time series and metrics.
-    digest: eb2f4fd8c6f4fc8598ab3d15d7b6ade6617d9882148a504b2813bc89db36df4f
-    home: https://grafana.net
-    icon: https://raw.githubusercontent.com/grafana/grafana/master/public/img/logo_transparent_400x.png
-    kubeVersion: ^1.8.0-0
-    maintainers:
-    - email: zanhsieh@gmail.com
-      name: zanhsieh
-    - email: rluckie@cisco.com
-      name: rtluckie
-    - email: maor.friedman@redhat.com
-      name: maorfr
-    name: grafana
-    sources:
-    - https://github.com/grafana/grafana
-    urls:
-    - https://github.com/RickCoxDev/raspi-helm/releases/download/grafana-4.3.0/grafana-4.3.0.tgz
-    version: 4.3.0
-  loki:
+  promtail:
   - apiVersion: v1
     appVersion: v1.3.0
-    created: "2020-02-07T01:55:23.591884951Z"
-    description: 'Loki: like Prometheus, but for logs.'
-    digest: 1e1eab68480c746d8d7991893dd465ae2de6441d4ee1821b714f29a17133dd50
-    engine: gotpl
+    created: "2020-02-06T20:10:26.564464-06:00"
+    description: Responsible for gathering logs and sending them to Loki
+    digest: 6f7d64691742854931309611fe2b95c2348eabd4288790646851dffa081c0d85
     home: https://grafana.com/loki
     icon: https://github.com/grafana/loki/raw/master/docs/logo.png
     kubeVersion: ^1.10.0-0
     maintainers:
     - email: lokiproject@googlegroups.com
       name: Loki Maintainers
-    name: loki
+    name: promtail
     sources:
     - https://github.com/grafana/loki
     urls:
-    - https://github.com/RickCoxDev/raspi-helm/releases/download/loki-0.25.0/loki-0.25.0.tgz
-    version: 0.25.0
-  metallb:
-  - apiVersion: v1
-    appVersion: 0.8.1
-    created: "2020-01-13T16:24:25.559403-06:00"
-    description: MetalLB is a load-balancer implementation for bare metal Kubernetes
-      clusters
-    digest: 8a061e9f9a4ffd25429f4b1bfdf6e61cf8627f900d41bbd606a07539ec926bb5
-    home: https://metallb.universe.tf
-    icon: https://metallb.universe.tf/images/logo.png
-    keywords:
-    - load-balancer
-    - balancer
-    - lb
-    - bgp
-    - arp
-    - vrrp
-    - vip
-    maintainers:
-    - email: dave@natulte.net
-      name: danderson
-    name: metallb
-    urls:
-    - https://github.com/RickCoxDev/raspi-helm/releases/download/metallb-0.12.0/metallb-0.12.0.tgz
-    version: 0.12.0
-  metrics-server:
-  - apiVersion: v1
-    appVersion: 0.3.6
-    created: "2020-01-14T12:36:16.881924404Z"
-    description: Metrics Server is a cluster-wide aggregator of resource usage data.
-    digest: 619cc2132b075836b2bb01b78e3627bb09f553480885f717c06122b05951e6db
-    home: https://github.com/kubernetes-incubator/metrics-server
-    keywords:
-    - metrics-server
-    maintainers:
-    - email: o.with@sportradar.com
-      name: olemarkus
-    - email: k.aasan@sportradar.com
-      name: kennethaasan
-    name: metrics-server
-    sources:
-    - https://github.com/kubernetes-incubator/metrics-server
-    urls:
-    - https://github.com/RickCoxDev/raspi-helm/releases/download/metrics-server-2.9.0/metrics-server-2.9.0.tgz
-    version: 2.9.0
-  nfs-client-provisioner:
-  - apiVersion: v1
-    appVersion: 3.1.0
-    created: "2020-01-13T16:24:25.676976-06:00"
-    description: nfs-client is an automatic provisioner that used your *already configured*
-      NFS server, automatically creating Persistent Volumes.
-    digest: 9e227875622891a390e4d4da95ac1d341379fc47016d37fa2e1babc2b0fd1f92
-    home: https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
-    keywords:
-    - nfs
-    - storage
-    maintainers:
-    - email: bart@verwilst.be
-      name: verwilst
-    name: nfs-client-provisioner
-    sources:
-    - https://github.com/kubernetes-incubator/external-storage/tree/master/nfs-client
-    urls:
-    - https://github.com/RickCoxDev/raspi-helm/releases/download/nfs-client-provisioner-1.2.8/nfs-client-provisioner-1.2.8.tgz
-    version: 1.2.8
-  prometheus:
-  - apiVersion: v1
-    appVersion: 2.15.2
-    created: "2020-01-13T16:24:25.848423-06:00"
-    description: Prometheus is a monitoring system and time series database.
-    digest: 537527ae761222d04c8a8316bf43a4b57d2ec60cf3f5c29b7483d181135ffb7c
-    home: https://prometheus.io/
-    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
-    maintainers:
-    - email: gianrubio@gmail.com
-      name: gianrubio
-    - email: zanhsieh@gmail.com
-      name: zanhsieh
-    name: prometheus
-    sources:
-    - https://github.com/prometheus/alertmanager
-    - https://github.com/prometheus/prometheus
-    - https://github.com/prometheus/pushgateway
-    - https://github.com/prometheus/node_exporter
-    - https://github.com/kubernetes/kube-state-metrics
-    urls:
-    - https://github.com/RickCoxDev/raspi-helm/releases/download/prometheus-10.2.0/prometheus-10.2.0.tgz
-    version: 10.2.0
-  traefik:
-  - apiVersion: v1
-    appVersion: 1.7.20
-    created: "2020-01-13T16:24:25.976755-06:00"
-    description: A Traefik based Kubernetes ingress controller with Let's Encrypt
-      support
-    digest: b4c767e41ff9f20a6be3524030a09e8318d291154df26a6a917b9b5c809ff210
-    home: https://traefik.io/
-    icon: https://docs.traefik.io/img/traefik.logo.png
-    keywords:
-    - traefik
-    - ingress
-    - acme
-    - letsencrypt
-    maintainers:
-    - email: kent.rancourt@microsoft.com
-      name: krancour
-    - email: emile@vauge.com
-      name: emilevauge
-    - email: daniel.tomcej@gmail.com
-      name: dtomcej
-    - email: ludovic@containo.us
-      name: ldez
-    name: traefik
-    sources:
-    - https://github.com/containous/traefik
-    - https://github.com/helm/charts/tree/master/stable/traefik
-    urls:
-    - https://github.com/RickCoxDev/raspi-helm/releases/download/traefik-1.85.0/traefik-1.85.0.tgz
-    version: 1.85.0
-generated: "2020-01-13T16:24:25.163703-06:00"
+    - https://github.com/RickCoxDev/raspi-helm/releases/download/promtail-0.18.0/promtail-0.18.0.tgz
+    version: 0.18.0
+generated: "2020-02-06T20:10:26.258375-06:00"
