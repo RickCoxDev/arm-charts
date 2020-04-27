@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: linuxserver/mariadb
-  tag: latest
+  tag: arm32v7-110.4.12mariabionic-ls58
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -24,9 +24,9 @@ tolerations: []
 
 affinity: {}
 
-livenessProbeDelay: 30
+livenessProbeDelay: 60
 
-readinessProbeDelay: 5
+readinessProbeDelay: 60
 
 timeZone:
 
@@ -34,7 +34,7 @@ persistence:
   enabled: true
   storageClass:
   existingClaim:
-  accessMode: ReadWriteOne
+  accessMode: ReadWriteOnce
   size: 8Gi
 
 db:

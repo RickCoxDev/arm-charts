@@ -61,14 +61,14 @@ spec:
               command:
               - mysqladmin
               - ping
-            initialDelaySeconds: {{ default 30 .Values.livenessProbeDelay }}
+            initialDelaySeconds: {{ default 60 .Values.livenessProbeDelay }}
             timeoutSeconds: 5
           readinessProbe:
             exec:
               command:
               - mysqladmin
               - ping
-            initialDelaySeconds: {{ default 5 .Values.readinessProbeDelay }}
+            initialDelaySeconds: {{ default 60 .Values.readinessProbeDelay }}
             timeoutSeconds: 1
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
