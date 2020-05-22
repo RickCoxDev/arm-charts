@@ -142,6 +142,7 @@ config: |-
   innodb_open_files       = 400
   innodb_io_capacity      = 400
   innodb_flush_method     = O_DIRECT
+  innodb_file_format      = Barracuda
   #
   # * Security Features
   #
