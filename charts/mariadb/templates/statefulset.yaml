@@ -43,15 +43,15 @@ spec:
             - name: MYSQL_USER
               value: {{ default "" .Values.db.user | quote }}
             - name: PUID
-              value: "0"
+              value: "1000"
             - name: PGID
-              value: "0"
+              value: "1000"
           volumeMounts:
           - name: data
             mountPath: /config
             subPath: databases
           - name: config
-            mountPath: /config/custom/custom.cnf
+            mountPath: /config/custom.cnf
             subPath: custom.cnf
           ports:
           - name: mysql
@@ -82,7 +82,7 @@ spec:
       - name: data
       {{- if .Values.persistence.enabled }}
         persistentVolumeClaim:
-          claimName: {{ .Values.persistence.existingClaim | default (include "name" .) }}
+          claimName: {{ .Values.persistence.existingClaim | default (include "fullname" .) }}
       {{- else }}
         emptyDir: {}
       {{- end -}}
@@ -100,17 +100,11 @@ spec:
     {{- end }}
   volumeClaimTemplates:
   - metadata:
-      name: data
+      name: {{ include "fullname" . }}
       labels:
-        app: {{ template "fullname" . }}
-        chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
-        release: "{{ .Release.Name }}"
-        heritage: "{{ .Release.Service }}"
-      annotations:
-      {{- if .Values.persistence.storageClass }}
-        volume.beta.kubernetes.io/storage-class: {{ .Values.persistence.storageClass | quote }}
-      {{- end }}
+        {{- include "labels" . | nindent 4 }}
     spec:
+      storageClassName: {{ .Values.persistence.storageClass }}
       accessModes:
         - {{ .Values.persistence.accessMode | quote }}
       resources:

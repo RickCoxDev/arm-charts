@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: linuxserver/mariadb
-  tag: arm32v7-110.4.12mariabionic-ls58
+  tag: 10.5.12
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
