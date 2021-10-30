@@ -6,6 +6,9 @@ metadata:
     {{- include "selectorLabels" . | nindent 4 }}
 spec:
   type: {{ .Values.serviceType }}
+  {{- if .Values.service.loadBalancerIP }}
+  loadBalancerIP: {{ .Values.service.loadBalancerIP }}
+  {{- end }}
   ports:
   - name: mysql
     port: 3306

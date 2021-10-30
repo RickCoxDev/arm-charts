@@ -15,6 +15,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
+  loadBalancerIP:
 
 resources: {}
 
