@@ -102,7 +102,7 @@ spec:
   - metadata:
       name: {{ include "fullname" . }}
       labels:
-        {{- include "labels" . | nindent 4 }}
+        {{- include "labels" . | nindent 8 }}
     spec:
       storageClassName: {{ .Values.persistence.storageClass }}
       accessModes:
