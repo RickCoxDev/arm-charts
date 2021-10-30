@@ -14,6 +14,16 @@ entries:
   mariadb:
   - apiVersion: v2
     appVersion: 10.5.12
+    created: "2021-10-30T13:49:10.692804612Z"
+    description: A Helm chart for Kubernetes
+    digest: 87405ac7bdadce0261a59d846493e1d2b9512b760e9932823afdef3c5ace72fa
+    name: mariadb
+    type: application
+    urls:
+    - https://github.com/RickCoxDev/arm-charts/releases/download/mariadb-1.1.0/mariadb-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 10.5.12
     created: "2021-10-30T13:33:51.17534667Z"
     description: A Helm chart for Kubernetes
     digest: 63f82823dff67ba34715c5ab3610fa43a1b9a4bc3a14f0bb0b03bfb2aa314b75
@@ -65,4 +75,4 @@ entries:
     urls:
     - https://github.com/RickCoxDev/raspi-helm/releases/download/redis-0.1.0/redis-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-30T13:33:51.175369772Z"
+generated: "2021-10-30T13:49:10.692817812Z"
